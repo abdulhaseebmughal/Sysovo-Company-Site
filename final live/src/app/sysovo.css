@@ -1,0 +1,280 @@
+/* =============================================
+   Sysovo Homepage — Custom Styles
+   Only applied on Home1 (imported via page.js)
+   ============================================= */
+
+/* --------------------------------------------------
+   FIX: Enable sticky scroll for service sections
+   overflow-x:hidden on html/body breaks position:sticky
+   Same fix as index-five uses
+   -------------------------------------------------- */
+body.index-one {
+    overflow-x: visible;
+}
+
+/* Solid white background for sticky sections without a bg class */
+.sysovo-sticky-white {
+    background: #ffffff;
+}
+
+/* --------------------------------------------------
+   FIX: Equal-height cards in dark bg grid sections
+   (Services 3x2 + Industry 4x2)
+   -------------------------------------------------- */
+.solution-expertice-area.bg-solution .row.g-0 > [class*="col-"] {
+    display: flex;
+}
+
+.solution-expertice-area.bg-solution .single-solution-style-one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.solution-expertice-area.bg-solution .single-solution-style-one .sysovo-card-cta {
+    margin-top: auto;
+    padding-top: 16px;
+}
+
+.solution-expertice-area.bg-solution .single-solution-style-one .sysovo-service-subtitle {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+/* --------------------------------------------------
+   FIX: Override theme's hover-reveal card behaviour
+   Theme sets .inner { height:184px; overflow:hidden }
+   and .icon { margin-bottom:114px } — designed to
+   reveal content only on hover. We need all content
+   visible by default for sysovo-card instances.
+   -------------------------------------------------- */
+.sysovo-card.single-service-style-two .inner {
+    height: auto !important;
+    overflow: visible !important;
+}
+
+.sysovo-card.single-service-style-two .inner .icon {
+    margin-bottom: 24px !important;
+}
+
+.sysovo-card.single-service-style-two:hover .inner .icon {
+    margin-bottom: 24px !important;
+}
+
+/* ==================================================
+   SECTION A — DARK BG CARDS  (Services + Industry)
+   single-solution-style-one on bg-solution
+   Theme hover: dark → white bg, dark text, icon blue
+   ================================================== */
+
+/* Icons always blue */
+.solution-expertice-area .single-solution-style-one .icon img {
+    filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(5128%) hue-rotate(243deg) brightness(98%) contrast(106%);
+    transition: 0.3s;
+}
+
+.single-solution-style-one:hover .icon img {
+    filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(5128%) hue-rotate(243deg) brightness(98%) contrast(106%) !important;
+}
+
+/* Service list inside dark cards — light text default */
+.sysovo-service-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 16px 0;
+}
+
+.sysovo-service-list .sysovo-service-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 3px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.3s;
+}
+
+.sysovo-service-list .sysovo-service-list-item .fa-check-circle {
+    color: var(--color-primary);
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+/* Subtitle bold on dark bg */
+.single-solution-style-one .disc strong {
+    color: rgba(255, 255, 255, 0.9);
+    transition: 0.3s;
+}
+
+/* btn-arrow on dark cards */
+.single-solution-style-one .btn-arrow {
+    color: #B0B0B0;
+    transition: 0.3s;
+}
+
+.single-solution-style-one .btn-arrow img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    transition: 0.3s;
+}
+
+/* --- DARK CARD HOVER --- card turns white */
+.single-solution-style-one:hover .sysovo-service-list-item {
+    color: #262626 !important;
+}
+
+.single-solution-style-one:hover .sysovo-service-list-item .fa-check-circle {
+    color: var(--color-primary) !important;
+}
+
+.single-solution-style-one:hover .disc strong {
+    color: #262626 !important;
+}
+
+.single-solution-style-one:hover .btn-arrow {
+    color: var(--color-primary);
+}
+
+.single-solution-style-one:hover .btn-arrow img {
+    filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(5128%) hue-rotate(243deg) brightness(98%) contrast(106%);
+    margin-left: 5px;
+}
+
+/* ==================================================
+   SECTION B — Advantage cards (hover-reveal style)
+   Fixed height always. Icon margin shifts to reveal desc.
+   ================================================== */
+.rts-solution-area .single-service-style-two .inner {
+    height: 250px;
+}
+
+.rts-solution-area .single-service-style-two .inner .icon {
+    margin-bottom: 180px;
+}
+
+.rts-solution-area .single-service-style-two:hover .inner .icon {
+    margin-bottom: 15px;
+}
+
+/* Icons always blue */
+.rts-solution-area .single-service-style-two .icon img {
+    filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(5128%) hue-rotate(243deg) brightness(98%) contrast(106%);
+    transition: 0.3s;
+}
+
+/* ==================================================
+   BUTTONS — consistent across both card types
+   ================================================== */
+
+/* btn-border arrow — blue on hover */
+.rts-btn.btn-border:hover svg path,
+.rts-btn.btn-border:focus svg path,
+.rts-btn.btn-border:active svg path {
+    stroke: var(--color-primary);
+}
+
+/* --------------------------------------------------
+   Stats section — subtle bottom shadow (line effect)
+   -------------------------------------------------- */
+.rts-counter-area {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* --------------------------------------------------
+   Dark CTA — proper content spacing
+   -------------------------------------------------- */
+.call-to-action-bg-dark-area .title {
+    margin-bottom: 20px;
+}
+
+.call-to-action-bg-dark-area p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.call-to-action-bg-dark-area .rts-btn {
+    margin-top: 20px;
+}
+
+/* --------------------------------------------------
+   Tech for Impact — Tabbed layout
+   -------------------------------------------------- */
+.sysovo-tech-tabs {
+    display: inline-flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.sysovo-tech-tab-btn {
+    padding: 6px 16px;
+    border: 1.5px solid #d1d1d1;
+    border-radius: 0;
+    background: transparent;
+    font-size: 13px;
+    font-weight: 500;
+    color: #262626;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.sysovo-tech-tab-btn:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.sysovo-tech-tab-btn.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
+}
+
+.sysovo-tech-tab-content .title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.sysovo-tech-tab-content .disc {
+    color: #5a5a5a;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.sysovo-tech-tab-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+@media only screen and (max-width: 991px) {
+    .sysovo-tech-tab-content {
+        margin-bottom: 30px;
+    }
+}
+
+/* --------------------------------------------------
+   Reduce double-gap between consecutive sections
+   -------------------------------------------------- */
+.case-studies-area.rts-section-gap,
+.rts-blog-area.rts-section-gap {
+    padding-top: 0;
+}
+
+/* --------------------------------------------------
+   Testimonials — equal height slides
+   -------------------------------------------------- */
+.testimonials-area-start .swiper-slide {
+    height: auto;
+}
+
+.testimonials-area-start .single-testimonials-area-one {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
