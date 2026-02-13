@@ -123,7 +123,7 @@ function SideBar({ isSidebarOpen, toggleSidebar }) {
                     <Link href="/service">Service</Link>
                   </li>
                   <li>
-                    <Link href="/service-single">Cloud Migration</Link>
+                    <Link href="/service-single">Plan Smarter, Build Better</Link>
                   </li>
                   <li>
                     <Link href="/it-strategies">IT Strategies</Link>

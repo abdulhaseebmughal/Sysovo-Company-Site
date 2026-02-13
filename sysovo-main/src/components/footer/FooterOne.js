@@ -42,7 +42,7 @@ function FooterOne() {
                                                 <Link href="/management-service">Management</Link>
                                             </li>
                                             <li>
-                                                <Link href="/service-single">Cloud Migration</Link>
+                                                <Link href="/service-single">Plan Smarter, Build Better</Link>
                                             </li>
                                         </ul>
                                     </div>

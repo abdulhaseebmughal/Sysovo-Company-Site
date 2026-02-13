@@ -9,15 +9,14 @@ const BlogGridMain = (props) => {
             </a>
             <div className="inner-content-area">
                 <div className="top-area">
-                    <span>Cloud Migration</span>
+                    <span>Plan Smarter, Build Better</span>
                     <a href={`/blog-grid/${Slug}`}>
                         <h3 className="title animated fadeIn">
                             {blogTitle ? blogTitle : 'How to growing your business'}
                         </h3>
                     </a>
                     <p className="disc">
-                        How do you create compelling presentations that wow your
-                        colleagues and impress your managers?
+                        Expert guidance on mobile strategy, UI/UX, and monetization. Align your app vision with market needs, technical feasibility, and growth goals before development starts.
                     </p>
                     <div className="bottom-author-area">
                         <img src="assets/images/testimonials/01.png" alt="author" />

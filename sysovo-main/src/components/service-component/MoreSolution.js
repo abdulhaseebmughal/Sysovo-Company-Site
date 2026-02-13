@@ -28,7 +28,7 @@ export default function MoreSolutions() {
         },
         {
             icon: "/assets/images/service/icons/08.svg",
-            title: "Cloud Migration",
+            title: "Plan Smarter, Build Better",
             description: "Shared team inboxes keep everyone on the same page and in the loop.",
         },
         {

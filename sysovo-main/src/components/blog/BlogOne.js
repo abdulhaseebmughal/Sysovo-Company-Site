@@ -42,9 +42,9 @@ function BlogOne() {
                                 </Link>
                                 <div className="inner-content-area">
                                     <div className="top-area">
-                                        <span>Cloud Migration</span>
+                                        <span>Plan Smarter, Build Better</span>
                                         <Link href="/blog-grid/protecting-your-business">
-                                            <h3 className="title">Future of cloud computing</h3>
+                                            <h3 className="title">Mobile App Consultancy</h3>
                                         </Link>
                                         <p className="disc">
                                             How do you create compelling presentations that wow your

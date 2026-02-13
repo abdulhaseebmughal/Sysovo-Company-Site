@@ -36,10 +36,10 @@ function page() {
                             </div>
                             <div className="col-lg-6">
                                 <div className="single-blog-list-area-right-content">
-                                    <span className="tag">Cloud Migration</span>
+                                    <span className="tag">Plan Smarter, Build Better</span>
                                     <div className="title-area">
                                         <Link href="/blog-grid/protecting-your-business">
-                                            <h3 className="title">Future of cloud computing</h3>
+                                            <h3 className="title">Mobile App Consultancy</h3>
                                             <img src="assets/images/blog/07.webp" alt="" />
                                         </Link>
                                     </div>

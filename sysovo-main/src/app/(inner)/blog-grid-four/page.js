@@ -32,13 +32,13 @@ function page() {
           className="col-lg-4 col-md-6 col-sm-12 col-12"
         >
           <div className="single-blog-area-five">
-            <span className="badge-1">Cloud Migration</span>
+            <span className="badge-1">Plan Smarter, Build Better</span>
             <Link href="/blog-grid/protecting-your-business" className="thumbnail">
               <img src="assets/images/blog/08.webp" alt="blog" />
             </Link>
             <div className="inner-content">
               <Link href="/blog-grid/protecting-your-business" className="title-area">
-                <h5 className="title">Future of cloud computing</h5>
+                <h5 className="title">Mobile App Consultancy</h5>
                 <img src="assets/images/service/icons/13.svg" alt="" />
               </Link>
               <p className="disc">
@@ -92,7 +92,7 @@ function page() {
           className="col-lg-4 col-md-6 col-sm-12 col-12"
         >
           <div className="single-blog-area-five">
-            <span className="badge-1">Cloud Migration</span>
+            <span className="badge-1">Plan Smarter, Build Better</span>
             <Link href="/blog-grid/protecting-your-business" className="thumbnail">
               <img src="assets/images/blog/11.webp" alt="blog" />
             </Link>

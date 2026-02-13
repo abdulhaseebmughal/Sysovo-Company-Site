@@ -221,7 +221,7 @@ function Nav() {
                                                             />
                                                         </div>
                                                         <div className="info">
-                                                            <h4 className="title">Cloud Migration</h4>
+                                                            <h4 className="title">Plan Smarter, Build Better</h4>
                                                             <p>Moving data to cloud infrastructure.</p>
                                                         </div>
                                                     </Link>
